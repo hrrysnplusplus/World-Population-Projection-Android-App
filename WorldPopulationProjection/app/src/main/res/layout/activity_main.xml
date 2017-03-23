@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hansoloproductions.calculatorbyhan.MainActivity"
+    android:background="@drawable/leaf"><![CDATA[
+
+    />
+
+    ]]>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:gravity="bottom"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/buttonInput1"
+        android:imeOptions="actionDone"
+        android:textColor="#FFFFFF"
+        android:layout_x="217dp"
+        android:layout_y="45dp"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_height="40dp"
+        android:hint="Population Size"
+        android:singleLine="false"
+        android:selectAllOnFocus="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/buttoninput3"
+        android:imeOptions="actionDone"
+        android:textColor="#FFFFFF"
+        android:layout_x="246dp"
+        android:layout_y="131dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/buttonInput2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:singleLine="false"
+        android:selectAllOnFocus="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/buttoninput4"
+        android:textColor="#FFFFFF"
+        android:imeOptions="actionDone"
+        android:layout_x="250dp"
+        android:layout_y="172dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:text="Annual Birth Rate Percent:  "
+        android:id="@+id/textView2"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_x="26dp"
+        android:layout_y="86dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:gravity="center"
+        android:text="Annual Death Rate Percent: "
+        android:textColor="#FFFFFF"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_x="9dp"
+        android:layout_y="102dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/buttonInput2"
+        android:layout_toStartOf="@+id/buttonInput2" />
+
+    <TextView
+        android:gravity="center"
+        android:text="# of years you want to predict: "
+        android:textSize="13dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_x="11dp"
+        android:layout_y="136dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="40dp" />
+
+    <EditText
+
+        android:selectAllOnFocus="true"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/buttonInput2"
+        android:textColor="#FFFFFF"
+        android:imeOptions="actionDone"
+        android:textSize="15dp"
+        android:layout_x="224dp"
+        android:layout_y="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/buttonInput1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        />
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:text="Enter Inital Population Size:  "
+        android:id="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:imeOptions="actionDone"
+        android:textSize="14dp"
+        android:layout_x="5dp"
+        android:layout_y="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/symbol"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/buttonAdd"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/transparent"
+        android:layout_x="253dp"
+        android:layout_y="422dp"
+        android:layout_below="@+id/buttoninput4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Population Prediction"
+
+        android:textSize="30dp"
+        android:id="@+id/tvDisplay"
+        android:textColor="#FFFFFF"
+        android:layout_x="1dp"
+        android:layout_y="294dp"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>
